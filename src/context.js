@@ -74,48 +74,7 @@ class PlayerProvider extends Component {
       return { modalOpen: false }
     })
   }
-  //   increment = id => {
-  //     let tempCart = [...this.state.team]
-  //     const selectedPlayer = tempCart.find(player => player.id === id)
 
-  //     const index = tempCart.indexOf(selectedPlayer)
-  //     const player = tempCart[index]
-  //     player.count++
-  //     player.total = player.count * player.price
-  //     this.setState(
-  //       () => {
-  //         return {
-  //           team: [...tempCart]
-  //         }
-  //       },
-  //       () => {
-  //         this.addTotals()
-  //       }
-  //     )
-  //   }
-  //   decrement = id => {
-  //     let tempCart = [...this.state.team]
-  //     const selectedPlayer = tempCart.find(player => player.id === id)
-
-  //     const index = tempCart.indexOf(selectedPlayer)
-  //     const player = tempCart[index]
-  //     player.count--
-  //     if (player.count === 0) {
-  //       this.removePlayer(id)
-  //     } else {
-  //       player.total = player.count * player.price
-  //     }
-  //     this.setState(
-  //       () => {
-  //         return {
-  //           team: [...tempCart]
-  //         }
-  //       },
-  //       () => {
-  //         this.addTotals()
-  //       }
-  //     )
-  //   }
   removePlayer = id => {
     let tempPlayers = [...this.state.players]
     let tempCart = [...this.state.team]

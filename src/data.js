@@ -7,6 +7,7 @@ https://www.iconfinder.com/Makoto_msk */
 https://www.iconfinder.com/icons/1243689/call_phone_icon
 Creative Commons (Attribution 3.0 Unported);
 https://www.iconfinder.com/Makoto_msk */
+// import test from '../players/qb'
 
 export const playerPool = [
   {
@@ -22,13 +23,22 @@ export const playerPool = [
   },
   {
     id: 2,
-    title: 'Samsung S7',
-    img: 'img/product-2.png',
-    price: 375,
-    company: 'SAMSUNG',
-    info:
-      'Features a 12 MP dual pixel camera, this is the first smartphone camera to have a professional-grade Dual Pixel Sensor with which youll now be able to take crisp, clear photos in the dark. With Galaxy S7 and S7 edge, you own the night. Mobile gaming just got a whole lot better with a dedicated game control center and gameplay recording. And with the GalaxyS7 and S7 edges powerful processor, it just got highly realistic. Weve redesigned the Galaxy S7 and S7 edge to have memory that expands at your will. The incredibly fast processors and huge RAM keeps everything running smooth even when running full capacity. While the bigger battery keeps you going for longer.',
-    inCart: false,
+    name: 'Patrick Mahomes',
+    img: 'players/qb/pm.jpg',
+    price: 100,
+    team: 'Kansas City Chiefs',
+    stats: 'throws lefty',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 3,
+    name: 'Aaron Rodgers',
+    img: 'players/qb/ar.JPG',
+    price: 99,
+    team: 'Green Bay Packers',
+    stats: 'tanking',
+    onTeam: false,
     total: 0
   }
 ]

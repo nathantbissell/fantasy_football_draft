@@ -16,13 +16,13 @@ export default class Navbar extends Component {
         </Link>
         <ul className='navbar-nav align-items-center'>
           <li className='nav-item ml-5'>
-            <Link to='/products' className='nav-link'>
+            <Link to='/players' className='nav-link'>
               Players
             </Link>
           </li>
         </ul>
         {/* <img src={techup} alt='TechUp' className='logo' /> */}
-        <Link to='/cart' className='ml-auto'>
+        <Link to='/team' className='ml-auto'>
           <ButtonContainer>
             <span className='mr-2'>
               <i className='fas fa-cart-plus' />

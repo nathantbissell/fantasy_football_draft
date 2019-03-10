@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 
 export default class Player extends Component {
   render() {
-    const { id, title, img, price, inCart } = this.props.player
+    const { id, name, img, price, onTeam } = this.props.player
     return (
       <PlayerWrapper className='col-9 mx-auto col-md-6 col-lg-3'>
         <div className='card'>
@@ -21,13 +21,13 @@ export default class Player extends Component {
                 </Link>
                 <button
                   className='cart-btn'
-                  disabled={inCart ? true : false}
+                  disabled={onTeam ? true : false}
                   onClick={() => {
                     value.addToCart(id)
                     value.openModal(id)
                   }}
                 >
-                  {inCart ? (
+                  {onTeam ? (
                     <p className='text-capitalize mb-0' disabled>
                       in cart
                     </p>
@@ -40,7 +40,7 @@ export default class Player extends Component {
           </PlayerConsumer>
           {/* card footer */}
           <div className='card-footer d-flex justify-content-between'>
-            <p className='align-self-center mb-0'>{title}</p>
+            <p className='align-self-center mb-0'>{name}</p>
             <h5 className='text-blue font-italic mb-0'>
               <span className='mr-1'>$</span>
               {price}
@@ -56,9 +56,9 @@ Player.propTypes = {
   player: PropTypes.shape({
     id: PropTypes.number,
     img: PropTypes.string,
-    title: PropTypes.string,
+    name: PropTypes.string,
     price: PropTypes.number,
-    inCart: PropTypes.bool
+    onTeam: PropTypes.bool
   }).isRequired
 }
 
