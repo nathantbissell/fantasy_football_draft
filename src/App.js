@@ -4,7 +4,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './components/Navbar'
 import Default from './components/Default'
-import ProductList from './components/ProductList'
+import PlayerList from './components/PlayerList'
 import Details from './components/Details'
 import Team from './components/Team'
 import Modal from './components/Modal'
@@ -17,7 +17,7 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/players' component={ProductList} />
+          <Route exact path='/players' component={PlayerList} />
           <Route exact path='/details' component={Details} />
           <Route exact path='/team' component={Team} />
           <Route exact component={Default} />
