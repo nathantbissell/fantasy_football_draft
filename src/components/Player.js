@@ -20,16 +20,16 @@ export default class Player extends Component {
                   <img src={img} alt='player img' className='card-img-top' />
                 </Link>
                 <button
-                  className='cart-btn'
+                  className='team-btn'
                   disabled={onTeam ? true : false}
                   onClick={() => {
-                    value.addToCart(id)
+                    value.addToTeam(id)
                     value.openModal(id)
                   }}
                 >
                   {onTeam ? (
                     <p className='text-capitalize mb-0' disabled>
-                      in cart
+                      in team
                     </p>
                   ) : (
                     <i className='fas fa-cart-plus' />
@@ -94,7 +94,7 @@ const PlayerWrapper = styled.div`
     transition all 1s linear;
   }
 
-  .cart-btn {
+  .team-btn {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -112,11 +112,11 @@ const PlayerWrapper = styled.div`
     // transition makes all changes happen over 1 second time
   }
 
-  .img-container:hover .cart-btn {
+  .img-container:hover .team-btn {
     transform: translate(0,0);
   }
 
-  .cart-btn:hover{
+  .team-btn:hover{
     color:var(--mainBlue);
     cursor: pointer;
   }

@@ -24,7 +24,7 @@ export default function TeamPlayer({ player, value }) {
       </div>
       {/*  */}
       <div className='col-10 mx-auto col-lg-2'>
-        <div className='cart-icon' onClick={() => removePlayer(id)}>
+        <div className='team-icon' onClick={() => removePlayer(id)}>
           <i className='fas fa-trash' />
         </div>
       </div>

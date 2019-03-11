@@ -10,6 +10,7 @@ export default class Details extends Component {
         {value => {
           const {
             id,
+            pos,
             team,
             img,
             stats,
@@ -57,7 +58,7 @@ export default class Details extends Component {
                       team
                       disabled={onTeam ? true : false}
                       onClick={() => {
-                        value.addToCart(id)
+                        value.addToTeam(id)
                         value.openModal(id)
                       }}
                     >

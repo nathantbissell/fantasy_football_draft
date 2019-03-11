@@ -141,21 +141,155 @@ export const playerPool = [
     stats: 'test',
     onTeam: false,
     total: 0
+  },
+  {
+    id: 13,
+    pos: 'rb',
+    name: 'Christian McCaffrey',
+    img: 'players/rb/cmac.JPG',
+    price: 85,
+    team: 'Carolina Panthers',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 14,
+    pos: 'rb',
+    name: 'Saquon Barkley',
+    img: 'players/rb/sq.JPG',
+    price: 89,
+    team: 'New York Giants',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 15,
+    pos: 'rb',
+    name: 'Melvin Gordon',
+    img: 'players/rb/mg.JPG',
+    price: 77,
+    team: 'Los Angeles Chargers',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 16,
+    pos: 'rb',
+    name: 'Ezekiel Elliot',
+    img: 'players/rb/zeke.JPG',
+    price: 69,
+    team: 'Dallas Cowboys',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 17,
+    pos: 'rb',
+    name: 'Todd Gurley',
+    img: 'players/rb/tg.JPG',
+    price: 56,
+    team: 'Los Angeles Rams',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 18,
+    pos: 'rb',
+    name: 'Leonard Fournette',
+    img: 'players/rb/lf.JPG',
+    price: 53,
+    team: 'Jacksonville Jaguars',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 19,
+    pos: 'rb',
+    name: 'LeVeon Bell',
+    img: 'players/rb/lb.JPG',
+    price: 49,
+    team: 'Oakland Raiders',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 20,
+    pos: 'rb',
+    name: 'Tarik Cohen',
+    img: 'players/rb/tc.JPG',
+    price: 42,
+    team: 'Chicago Bears',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 21,
+    pos: 'rb',
+    name: 'Phillip Lindsay',
+    img: 'players/rb/pl.JPG',
+    price: 36,
+    team: 'Denver Broncos',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 22,
+    pos: 'rb',
+    name: 'Sony Michel',
+    img: 'players/rb/sm.JPG',
+    price: 49,
+    team: 'New England Patriots',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 23,
+    pos: 'rb',
+    name: 'Derrick Henry',
+    img: 'players/rb/dh.JPG',
+    price: 41,
+    team: 'Tennessee Titans',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 24,
+    pos: 'rb',
+    name: 'Joe Mixon',
+    img: 'players/rb/mix.JPG',
+    price: 39,
+    team: 'Cincinatti Bengals',
+    stats: 'test',
+    onTeam: false,
+    total: 0
   }
 ]
 
 // {
-//   id: 10,
-//   name: 'Jimmy Garropolo',
-//   img: 'players/qb/jimmyg.JPG',
-//   price: 55,
-//   team: 'San Fransisco 49ers',
+//   id: ,
+//   pos: '',
+//   name: '',
+//   img: 'players/rb/.JPG',
+//   price: ,
+//   team: '',
 //   stats: 'test',
 //   onTeam: false,
 //   total: 0
-// }
+// },
 export const detailPlayer = {
   id: 0,
+  pos: 'dst',
   name: 'Blank',
   img: 'img/product-1.png',
   price: 0,
