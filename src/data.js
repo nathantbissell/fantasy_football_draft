@@ -12,13 +12,12 @@ https://www.iconfinder.com/Makoto_msk */
 export const playerPool = [
   {
     id: 1,
-    title: 'Google Pixel - Black',
-    img: 'img/product-1.png',
-    price: 319,
-    company: 'GOOGLE',
-    info:
-      'Equipped with a AMOLED capacitive touchscreen, the Google Pixel Black has a resolution of 1080 x 1920 pixels, with a 16:9 aspect ratio. Internal memory varies from 32/128 GB, with 4 GB RAM. The main camera quality is incredible, with 12.3 megapixels at your disposal, while the front facing camera can take photos up to 8 megapixels. Battery life is estimated at 64 hours.',
-    inCart: false,
+    name: 'Nick Foles',
+    img: 'players/qb/nf.jpg',
+    price: 26,
+    team: 'Philadelphia Eagles',
+    stats: 'test',
+    onTeam: false,
     total: 0
   },
   {
@@ -40,9 +39,108 @@ export const playerPool = [
     stats: 'tanking',
     onTeam: false,
     total: 0
+  },
+  {
+    id: 4,
+    name: 'Blake Bortles',
+    img: 'players/qb/bb.JPG',
+    price: 12,
+    team: 'Jacksonville Jaguars',
+    stats: 'The BOAT',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 5,
+    name: 'Ben Roethlisberger',
+    img: 'players/qb/ben.JPG',
+    price: 42,
+    team: 'Pittsburgh Steelers',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 6,
+    name: 'Baker Mayfield',
+    img: 'players/qb/bm.JPG',
+    price: 56,
+    team: 'Cleveland Browns',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 7,
+    name: 'Cam Newton',
+    img: 'players/qb/cn.JPG',
+    price: 37,
+    team: 'Carolina Panthers',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 8,
+    name: 'Carson Wentz',
+    img: 'players/qb/cw.JPG',
+    price: 57,
+    team: 'Philadelphia Eagles',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 9,
+    name: 'Jared Goff',
+    img: 'players/qb/jg.JPG',
+    price: 39,
+    team: 'Los Angeles Rams',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 10,
+    name: 'Jimmy Garropolo',
+    img: 'players/qb/jimmyg.JPG',
+    price: 55,
+    team: 'San Fransisco 49ers',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 11,
+    name: 'Lamar Jackson',
+    img: 'players/qb/lj.JPG',
+    price: 21,
+    team: 'Baltimore Ravens',
+    stats: 'test',
+    onTeam: false,
+    total: 0
+  },
+  {
+    id: 12,
+    name: 'Andrew Luck',
+    img: 'players/qb/al.JPG',
+    price: 52,
+    team: 'Indiannapolis Colts',
+    stats: 'test',
+    onTeam: false,
+    total: 0
   }
 ]
-
+// {
+//   id: 10,
+//   name: 'Jimmy Garropolo',
+//   img: 'players/qb/jimmyg.JPG',
+//   price: 55,
+//   team: 'San Fransisco 49ers',
+//   stats: 'test',
+//   onTeam: false,
+//   total: 0
+// }
 export const detailPlayer = {
   id: 1,
   title: 'Google Pixel - Black',
