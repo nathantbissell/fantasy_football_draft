@@ -44,12 +44,12 @@ class PlayerProvider extends Component {
       return { detailPlayer: player }
     })
   }
-  addToCart = id => {
+  addToTeam = id => {
     let tempPlayers = [...this.state.players]
     // spread function gives us a reference to all of the players
     const index = tempPlayers.indexOf(this.getPlayer(id))
     const player = tempPlayers[index]
-    player.inCart = true
+    player.inTeam = true
     const price = player.price
     player.total = price
     this.setState(
@@ -77,18 +77,18 @@ class PlayerProvider extends Component {
 
   removePlayer = id => {
     let tempPlayers = [...this.state.players]
-    let tempCart = [...this.state.team]
+    let tempTeam = [...this.state.team]
 
-    tempCart = tempCart.filter(player => player.id !== id)
+    tempTeam = tempTeam.filter(player => player.id !== id)
     const index = tempPlayers.indexOf(this.getPlayer(id))
     let removedPlayer = tempPlayers[index]
-    removedPlayer.inCart = false
+    removedPlayer.inTeam = false
     removedPlayer.count = 0
     removedPlayer.total = 0
     this.setState(
       () => {
         return {
-          team: [...tempCart],
+          team: [...tempTeam],
           players: [...tempPlayers]
         }
       },
@@ -97,7 +97,7 @@ class PlayerProvider extends Component {
       }
     )
   }
-  clearCart = () => {
+  clearTeam = () => {
     this.setState(
       () => {
         return { team: [] }
@@ -124,11 +124,11 @@ class PlayerProvider extends Component {
         value={{
           ...this.state,
           handleDetail: this.handleDetail,
-          addToCart: this.addToCart,
+          addToTeam: this.addToTeam,
           openModal: this.openModal,
           closeModal: this.closeModal,
           removePlayer: this.removePlayer,
-          clearCart: this.clearCart
+          clearTeam: this.clearTeam
         }}
       >
         {this.props.children}

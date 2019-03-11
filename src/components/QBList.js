@@ -13,7 +13,9 @@ export default class PlayerList extends Component {
               <PlayerConsumer>
                 {value => {
                   return value.players.map(player => {
-                    return <Player key={player.id} player={player} />
+                    if (player.pos === 'qb') {
+                      return <Player key={player.id} player={player} />
+                    }
                   })
                 }}
               </PlayerConsumer>

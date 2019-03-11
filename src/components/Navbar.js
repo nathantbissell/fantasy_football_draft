@@ -20,6 +20,11 @@ export default class Navbar extends Component {
               Players
             </Link>
           </li>
+          <li className='nav-item ml-5'>
+            <Link to='/qb' className='nav-link'>
+              Quarterbacks
+            </Link>
+          </li>
         </ul>
         {/* <img src={techup} alt='TechUp' className='logo' /> */}
         <Link to='/team' className='ml-auto'>

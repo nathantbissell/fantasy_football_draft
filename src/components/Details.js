@@ -49,7 +49,7 @@ export default class Details extends Component {
                   <p className='text-muted lead'>{stats}</p>
                   {/* buttons below */}
                   <div className='add-buttons'>
-                    <Link to='/'>
+                    <Link to='/players'>
                       <ButtonContainer>back to players</ButtonContainer>
                     </Link>
 

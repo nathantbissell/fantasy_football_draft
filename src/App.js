@@ -9,6 +9,7 @@ import Details from './components/Details'
 import Team from './components/Team'
 import Modal from './components/Modal'
 import Home from './components/Home.js'
+import QBList from './components/QBList'
 
 class App extends Component {
   render() {
@@ -18,6 +19,13 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/players' component={PlayerList} />
+
+          <Route exact path='/qb' component={QBList} />
+          {/* <Route exact path='/rb' component={RBList} />
+          <Route exact path='/wr' component={WRList} />
+          <Route exact path='/te' component={TEList} />
+          <Route exact path='/dst' component={DSTList} /> */}
+
           <Route exact path='/details' component={Details} />
           <Route exact path='/team' component={Team} />
           <Route exact component={Default} />

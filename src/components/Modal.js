@@ -23,13 +23,13 @@ export default class Modal extends Component {
                       id='modal'
                       className='col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5'
                     >
-                      <h5>Added to Your Cart!</h5>
+                      <h5>Added to Your Team!</h5>
                       <img src={img} className='img-fluid' alt='product' />
                       <h5>{title}</h5>
                       <h5 className='text-muted'>price : $ {price}</h5>
-                      <Link to='/'>
+                      <Link to='/players'>
                         <ButtonContainer onClick={() => closeModal()}>
-                          Continue Shopping
+                          Back to Players
                         </ButtonContainer>
                       </Link>
 
