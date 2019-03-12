@@ -8,7 +8,7 @@ export default class Player extends Component {
   render() {
     const { id, name, img, price, onTeam } = this.props.player
     return (
-      <PlayerWrapper className='col-9 mx-auto col-md-6 col-lg-3'>
+      <PlayerWrapper className='col-12 mx-auto col-md-6 col-lg-4'>
         <div className='card'>
           <PlayerConsumer>
             {value => (
@@ -32,7 +32,7 @@ export default class Player extends Component {
                       in team
                     </p>
                   ) : (
-                    <i className='fas fa-cart-plus' />
+                    <i className='fas fa-plus' />
                   )}
                 </button>
               </div>
@@ -90,7 +90,7 @@ const PlayerWrapper = styled.div`
     transform:scale(1.2);
   }
 
-  .card-img-top{
+  .card-img-top {
     transition all 1s linear;
   }
 

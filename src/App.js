@@ -11,6 +11,9 @@ import Modal from './components/Modal'
 import Home from './components/Home.js'
 import QBList from './components/QBList'
 import RBList from './components/RBList'
+import WRList from './components/WRList'
+import TEList from './components/TEList'
+import DSTList from './components/DSTList'
 
 class App extends Component {
   render() {
@@ -22,9 +25,9 @@ class App extends Component {
           <Route exact path='/players' component={PlayerList} />
           <Route exact path='/qb' component={QBList} />
           <Route exact path='/rb' component={RBList} />
-          {/* <Route exact path='/wr' component={WRList} />
+          <Route exact path='/wr' component={WRList} />
           <Route exact path='/te' component={TEList} />
-          <Route exact path='/dst' component={DSTList} /> */}
+          <Route exact path='/dst' component={DSTList} />
           <Route exact path='/details' component={Details} />
           <Route exact path='/team' component={Team} />
           <Route exact component={Default} />

@@ -17,17 +17,32 @@ export default class Navbar extends Component {
         <ul className='navbar-nav align-items-center'>
           <li className='nav-item ml-5'>
             <Link to='/players' className='nav-link'>
-              Players
+              All Players
             </Link>
           </li>
           <li className='nav-item ml-5'>
             <Link to='/qb' className='nav-link'>
-              Quarterbacks
+              QB
             </Link>
           </li>
           <li className='nav-item ml-5'>
             <Link to='/rb' className='nav-link'>
-              Runningbacks
+              RB
+            </Link>
+          </li>
+          <li className='nav-item ml-5'>
+            <Link to='/wr' className='nav-link'>
+              WR
+            </Link>
+          </li>
+          <li className='nav-item ml-5'>
+            <Link to='/te' className='nav-link'>
+              TE
+            </Link>
+          </li>
+          <li className='nav-item ml-5'>
+            <Link to='/dst' className='nav-link'>
+              DST
             </Link>
           </li>
         </ul>
@@ -35,7 +50,7 @@ export default class Navbar extends Component {
         <Link to='/team' className='ml-auto'>
           <ButtonContainer>
             <span className='mr-2'>
-              <i className='fas fa-cart-plus' />
+              <i className='fas fa-list' />
             </span>
             My Team
           </ButtonContainer>

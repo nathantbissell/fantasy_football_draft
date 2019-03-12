@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function TeamPlayer({ player, value }) {
-  const { id, title, img, price, total } = player
+  const { id, name, img, price, total } = player
   const { removePlayer } = value
   return (
     <div className='row my-2 text-capitalize text-center'>
@@ -14,8 +14,8 @@ export default function TeamPlayer({ player, value }) {
         />
       </div>
       <div className='col-10 mx-auto col-lg-2'>
-        <span className='d-lg-none'>Product : </span>
-        {title}
+        <span className='d-lg-none'>Player : </span>
+        {name}
       </div>
 
       <div className='col-10 mx-auto col-lg-2'>
